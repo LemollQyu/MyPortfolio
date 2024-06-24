@@ -3,9 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home";
 import About from "./pages/about";
-import News from "./pages/news";
+import Work from "./pages/work";
 import NoPage from "./pages/notFound";
 import Form from "./pages/login"
+import Profile from "./pages/profile"
 
 
 //papper
@@ -25,9 +26,10 @@ function App() {
       <Routes>
 		  <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/news" element={<News />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="*" el  ement={<NoPage />} />
 		  <Route path="/login" element={<Form />} />
+		  <Route path="/profile" element={<Profile />} />
 		  
 	
 		  <Route path="/papper" element={<Papper />} />

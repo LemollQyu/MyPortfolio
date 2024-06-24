@@ -70,7 +70,7 @@ const Menu = () => {
 				<a className="text-white font-[FontHome]" href="/potograph">Potograph</a>
 			</div>
 		</div>
-		<button onClick={handleClick} className="fixed w-[28px] h-[28px] translate-x-[-50%] bottom-[14px] left-1/2 flex flex-col justify-around">
+		<button onClick={handleClick} className="fixed w-[28px] z-40 h-[28px] translate-x-[-50%] bottom-[14px] left-1/2 flex flex-col justify-around">
 			<span className={cssSpanTop}></span>
 			<span className={cssSpanCenter}></span>
 			<span className={cssSpanBottom}></span>

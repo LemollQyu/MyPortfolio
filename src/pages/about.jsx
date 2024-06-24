@@ -5,9 +5,16 @@ import NavAbout from "./navAbout/NavAbout.jsx"
 
 const About = ({children}) => {
 	
+	const [ada, setAda] = useState("hidden")
+	
 	function handle() {
+		if( ada == "hidden" ) {
+			setAda("block")
+			
+		} else {
+			setAda("hidden")
+		}
 		
-		alert("Cek")
 	}
 	
   return (
@@ -25,8 +32,9 @@ const About = ({children}) => {
 			
 		</div>
 		
-	
+		<div className={`${ada}`}>
 		<NavAbout />
+		</div>
 
 	</LayoutHome>
      
